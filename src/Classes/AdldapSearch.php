@@ -414,9 +414,11 @@ class AdldapSearch extends AbstractAdldapBase
      *
      * @param Builder $query
      */
-    private function setQueryBuilder(Builder $query)
+    public function setQueryBuilder(Builder $query)
     {
         $this->query = $query;
+        
+        return $this;
     }
 
     /**
